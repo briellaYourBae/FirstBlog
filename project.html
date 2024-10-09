@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            max-height: 100vh;
+            background-color: #1F252E;
+        }
+
+        header {     /* top btn */
+            padding: 1.7rem 1rem;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            max-width: 80%;
+            margin: auto;
+            align-items: center;
+            background-color: transparent;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+
+        .logo a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: .97rem;
+            font-weight: 600;
+            letter-spacing: .7px;
+            padding: 1rem;
+            padding: 0.4rem 1rem;
+        }
+
+        nav a:hover {
+            color: purple;
+            border-radius: 1rem;
+            transition: all.3s ease-in-out;
+        }
+
+        #click {
+            display: none;
+        }
+
+        .menu i {
+            color: purple;
+        }
+
+        .menu {
+            display: none;
+        }
+        .up{
+          color: black;
+          text-align: center;
+        }
+       
+        .boxs {
+          display: flex;
+          justify-content: space-around;
+          margin: 0 25px;
+          padding: 0 px;
+
+        }
+      .image-container{
+        position: relative;
+        width: 270px;
+        height: 400%;
+        overflow: hidden;
+        background-size: contain;
+      }
+      .image-container img {
+          width: 100%;
+          height: 100%;
+          object-fit: fill;
+        }  
+      .image-container:hover img{
+        filter: blur(5px);
+        transition-duration: 150ms;
+      }
+      .image-container:hover .cap{
+        background-color:purple;
+        color: white;
+      }
+      .cap{
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: transparent;
+        color: white;
+        font-weight: bold;
+        transition: background-color 0.3s ease, color 0.3 ease;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <div class="logo">
+          <a href="index.html">BrieLLa.YB</a>
+      </div>
+      <input type="checkbox" id="click">
+      <label for="click" class="mainicon">
+          <div class="menu">
+              <i class="bi bi-list"></i>
+          </div>
+      </label>
+      <nav>
+          <a href="index.html">Home</a>
+          <a href="biodata.html" target="_blank">Briella?</a>
+          <a href="project.html">Project</a>
+      </nav>
+  </header>
+  <div class="boxs">
+    <div class="image-container">
+      <a href="dtbrg.html" target="_blank">
+        <img src="assets/images/geprek.jpg" alt="DATA BARANG">
+        <div class="cap">DATA BARANG</div>
+      </a>
+    </div>
+    <div class="image-container">
+      <a href="dtsw.html" target="_blank">
+        <img src="assets/images/geprek.jpg" alt="DATA SISWA">
+        <div class="cap">DATA SISWA</div>
+      </a>
+    </div>
+    <div class="image-container">
+      <a href="#" target="_blank">
+        <img src="assets/images/geprek.jpg" alt="NOTHING">
+        <div class="cap">NOTHING</div>
+      </a>
+    </div>
+    <div class="image-container">
+      <a href="#" target="_blank">
+        <img src="assets/images/geprek.jpg" alt="NOTHING">
+        <div class="cap">NOTHING</div>
+      </a>
+    </div>
+    <div class="image-container">
+      <a href="#" target="_blank">
+        <img src="assets/images/geprek.jpg" alt="NOTHING">
+        <div class="cap">NOTHING</div>
+      </a>
+    </div>
+  </div>
+    
+  </body>
+
+</html>

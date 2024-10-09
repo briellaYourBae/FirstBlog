@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            max-height: 100vh;
+            background-color: #1F252E;
+        }
+
+        header {
+            padding: 1.7rem 1rem;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            max-width: 80%;
+            margin: auto;
+            align-items: center;
+            background-color: transparent;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+
+        .logo a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: .97rem;
+            font-weight: 600;
+            letter-spacing: .7px;
+            padding: 1rem;
+            padding: 0.4rem 1rem;
+        }
+
+        nav a:hover {
+            color: purple;
+            border-radius: 1rem;
+            transition: all.3s ease-in-out;
+        }
+
+        #click {
+            display: none;
+        }
+
+        .menu i {
+            color: purple;
+        }
+
+        .menu {
+            display: none;
+        }
+        .up{
+          color: black;
+          text-align: center;
+        }
+
+
+        /* table */
+        table {
+          border-collapse: collapse;
+          width: 100%;
+          box-shadow: 0 9px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 20px;
+          overflow: hidden;
+        }
+
+        td {
+          color: white ;
+          border: 1px solid whitesmoke;
+          padding: 12px;
+          text-align: left;
+          transition: transform 0.3s ease-in-out;
+
+        }
+        td:hover{
+          transform: translateY(-10px);
+          color: white;
+          background-color: purple;
+        }
+
+        th {
+          background-color: #eaeaea;
+          font-weight: bold;
+          transition: transform 0.3s ease-out
+        }
+        th:hover{
+          transform: translateY(-10px);
+          color: white;
+          background: purple;
+        }
+
+        tr:nth-child(even) {
+          background-color: #b1b1b1;
+        }
+
+        .footer{
+          color: #424242;
+          text-align: center;
+        }
+        .footer:hover{
+          color: white;
+        }
+        hr:hover {
+          transform: rotate(180deg);
+          transition: transform 10s ease-in-out;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main h1 {
+          text-align: center;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: rgb(152, 152, 152);
+        }
+        /* .main h1:hover{
+          color: purple;
+        } */
+
+        .main p {
+          text-align:left;
+            margin-top: 1rem;
+            font-size: .98rem;
+            color: #b1b1b1;
+        }
+
+        #el{
+          color: white;
+        }
+        #el:hover{
+          color: purple;
+        }
+        
+        p {
+          font-size: 27px;
+          font-weight: 700;
+          line-height: 1.5;
+          padding: 0 .100px;
+          margin: 20px;
+          transition: color .3s ease-in-out, box-shadow .3s ease-in-out, background .3s ease-in-out;
+        }
+
+        p:hover {
+          color: #ffffff;
+          background-color: purple; 
+        }
+
+        .social {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.4rem;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .social a {
+            color: white;
+            font-size: 1rem;
+            border: 1.6px solid white;
+            border-radius: 50%;
+            padding: .35rem;
+            text-align: center;
+        }
+
+        .social a:hover {
+            color: #1F252E;
+            background-color: purple;
+            box-shadow: 0 0 20px purple;
+            transition: all .3s ease-in-out;
+        }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+          <a href="index.html">BrieLLa.YB</a>
+      </div>
+      <input type="checkbox" id="click">
+      <label for="click" class="mainicon">
+          <div class="menu">
+              <i class="bi bi-list"></i>
+          </div>
+      </label>
+      <nav>
+          <a href="index.html" class="active">Home</a>
+          <a href="biodata.html" target="_blank">Briella?</a>
+          <a href="project.html">Project</a>
+      </nav>
+  </header>
+    <nav class="up">
+      <div class="main">
+        <div class="detail">
+          <h1><span id="el">Briella.YB</span>
+            <br>
+            <span id="el">Siapa</span> sih <span id="el">Dia </span>Itu?</h1>
+          <p>Nama <span style="color: whitesmoke;">Muhammad Faqih</span> atau <span style="color: whitesmoke;">Briella</span>, seorang siswa di SMKN 1 Purwokerto dengan jurusan Rekayasa Perangkat Lunak (RPL). Di luar aktivitas akademis, saya menikmati berbagai hobi, mulai dari fotografi, bermain biliar, 
+            hingga berenang. Saya juga suka mendengarkan musik di kala senja ataupun saat mengerjakan projek coding. Meskipun saya telah mengikuti beberapa lomba 
+            dan memperoleh beberapa sertifikat, saya tetap memandang setiap pengalaman sebagai pelajaran berharga untuk terus berkembang.
+          <br>~AI </p>
+
+          <div class="social">
+            <a href="https://github.com/briellaYourBae"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-faqih-163b6231a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/@briella.yb"><i class="bi bi-instagram"></i></a>
+
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <br>
+
+      <h1 style="color: #b1b1b1; margin-bottom: 15px;">Biodata</h1>
+      </nav>
+    
+
+    <table>
+        <tr>
+          <th>Nama Lengkap </th>
+          <td>Muhammad Faqih</td>
+        </tr>
+        <tr>
+          <th>Kelas </th>
+          <td>XII PPLG 1</td>
+        </tr>
+        <tr>
+          <th>Jurusan </th>
+          <td>Pengembangan Perangkat Lunak & Gim (PPLG)</td>
+        </tr>
+        <tr>
+          <th>Sekolah </th>
+          <td>SMKN 1 Purwokerto</td>
+        </tr>
+        <tr>
+          <th>NO Hp </th>
+          <td>+62 851 7119 6066</td>
+        </tr>
+        <tr>
+          <th>Hobi </th>
+          <td>Bermain Biliard, Berenang dan Buang-Buang waktu</td>
+        </tr>
+        <tr>
+          <th>Moto Hidup </th>
+          <td>Ingan Kata-Kata Pak Vinchen.</td>
+        </tr>
+      </table>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrieLLa-DataSiswa</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .checkbox-group label {
+            margin-right: 15px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            display: flex; 
+            align-items: center; 
+            padding-bottom: 5px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            margin-right: 10px;
+        }
+        .kelamin{
+            display: flex; 
+            align-items: center;
+            
+        }
+         /* .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: inline-block;
+            text-align: right;
+        }
+        .form-group input[type="text"] {
+            width: 200px;
+        } */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Data Siswa</h2>
+        <form>
+            <div class="form-group">
+                <label for="nis">NIS</label>
+                <input type="text" id="nis" name="nis" placeholder="NIS">
+            </div>
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama">
+            </div>
+
+
+            <div class="kelamin">
+                <label>Jenis Kelamin </label>
+                <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki" required>
+                <label for="laki-laki" style="display: inline;">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan" required>
+                <label for="perempuan" style="display: inline;">Perempuan</label>
+            </div>
+
+            <br>
+            <div class="form-group">
+                <label for="jurusan">Jurusan</label>
+                <select id="jurusan" name="jurusan">
+                    <option value="TJKT">DKV</option>
+                    <option value="DKV">TJKT</option>
+                    <option value="PPLG">PPLG</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="kelas">Kelas</label>
+                <select id="kelas" name="kelas">
+                    <option value="X">X</option>
+                    <option value="XI">XI</option>
+                    <option value="XII">XII</option>
+                </select>
+            </div>
+
+        
+            <div class="form-group">
+                <label>Kemampuan  </label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="pemrograman" name="kemampuan" value="Pemrograman">
+                    <label for="pemrograman">Pemrograman</label>
+                    <input type="checkbox" id="desain" name="kemampuan" value="Desain">
+                    <label for="desain">Desain</label>
+                    <input type="checkbox" id="jaringan" name="kemampuan" value="Jaringan">
+                    <label for="jaringan">Video Editing</label>
+                    <input type="checkbox" id="editing_video" name="kemampuan" value="Editing Video">
+                    <label for="editing_video">Lainnya</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="foto">Foto</label>
+                <input type="file" id="foto" name="foto">
+            </div>
+            
+            <button type="button">Simpan</button>
+            <button type="button">edit</button>
+            <button type="button">hapus</button>
+            <a href="index.html">
+                <button type="button">tutup</button>
+            </a>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
