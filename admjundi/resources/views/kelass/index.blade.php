@@ -34,8 +34,8 @@
                                 <td class="text-center">{{$key+1}}</td>
                                 <td>
                                     <div class="d-flex align-items-center">
-                                        <i class="fas fa-graduation-cap text-primary mr-2"></i>
-                                        <span>{{$kelas->nama}}</span>
+                                        <i class="fas fa-solid fa-school text-primary mr-2"></i>
+                                        <span> - {{$kelas->nama}}</span>
                                     </div>
                                 </td>
                                 <td>

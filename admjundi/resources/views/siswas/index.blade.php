@@ -38,11 +38,11 @@
                                 <td>
                                     <div class="d-flex align-items-center">
                                         <div class="">
-                                            <span class="initials">{{ substr($siswa->nama, 0, 1) }}</span>
+                                        <i class="fas fa-graduation-cap text-primary mr-2"></i>
                                         </div>
                                         <div>
-                                            <span class="d-block">{{ $siswa->nama }}</span>
-                                            <small class="text-muted">Siswa Aktif</small>
+                                            <span class="d-block">| {{ $siswa->nama }}</span>
+                                            <small class="text-muted">|=> Siswa Aktif</small>
                                         </div>
                                     </div>
                                 </td>
